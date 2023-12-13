@@ -1,0 +1,22 @@
+{% extends 'layout.html' %} 
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<header>
+    <h1>Vaporwave</h1>
+    <div class="div-buttons">        
+        <button class="button-login"><a href="/login">Login</a></button>
+        <button class="button-signup"><a href="/signup">Sign-up</a></button>
+    </div>
+</header>
+
+<main>
+    <h1>Title</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sapien pellentesque habitant morbi tristique senectus et netus. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Vel eros donec ac odio tempor orci dapibus ultrices in. Amet commodo nulla facilisi nullam.</p>
+</main>
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'layout.html' %} 
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+
+<div class="main-wrapper">
+<main>
+    <img src="../static/img/cover.png" alt="Cover">
+    <form action="/">
+        <h1>vaporwave</h1>
+        <div class="login-field">
+            <label for="login">Username</label>
+            <input type="text" name="login" id="login" placeholder="Enter username or email" autofocus maxlength="64">
+        </div>
+        <div class="login-field">
+            <label for="password">Password</label>
+            <div class="login-field-password">
+                <input type="password" name="password" id="password" placeholder="Enter password" maxlength="64">
+                <img src="../static/img/open.png" id="showpassword" onclick="ShowPassword()">
+            </div>
+        </div>
+        <div class="login-options">
+            <div class="login-rememberme">
+                <input type="checkbox" name="rememberme" id="rememberme">
+                <label for="rememberme">Remember-me</label>
+            </div>
+            <a href="">Forgot password?</a>
+        </div>
+        <button type="submit">Login</button>
+        <div class="login-or">
+            <hr>OR<hr>
+        </div>
+        <div>
+            <span style="color: lightgray; font-size: 14px;">Don't have an account? <a href="/signup" style="color: var(--primary-color);">Sign-up</a></span>
+        </div>
+    </form>
+</main>
+</div>
+
+{% endblock %}

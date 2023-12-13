@@ -1,0 +1,33 @@
+:root{
+    color-scheme: dark;
+    --primary-color: whitesmoke;
+    --secondary-color: rgba(0, 0, 0, 0.7);
+    --gradient: linear-gradient(135deg, #8527e7, #e74c3c);
+}
+
+*{
+  /* box-sizing: border-box; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* height: 100vh; */
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-image: url("../img/background.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
